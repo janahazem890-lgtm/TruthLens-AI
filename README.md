@@ -1,3 +1,48 @@
+# 🔎 TruthLens AI
+
+TruthLens AI is a web-based AI fact-checking system that verifies claims using a Retrieval-Augmented Generation (RAG) pipeline. It searches trusted online sources, retrieves the most relevant information, and uses Gemini AI to generate an explainable verdict.
+
+## 🛠️ Technologies
+
+- **Web-based RAG** – Retrieves relevant information before generating the response.
+- **Gemini 3.5 Flash Lite** – Generates the final fact-checking result.
+- **Serper API** – Searches Google for trusted sources.
+- **BeautifulSoup** – Extracts text from web pages.
+- **RecursiveCharacterTextSplitter** – Splits long documents into chunks.
+- **Sentence Transformers (all-MiniLM-L6-v2)** – Creates text embeddings.
+- **FAISS** – Stores and retrieves embeddings using semantic search.
+- **Output Parsing** – Converts Gemini's JSON response into a structured result.
+- **Gradio** – Provides a simple user interface.
+
+## ⚙️ Workflow
+
+```text
+Claim
+   ↓
+Serper Search
+   ↓
+Extract Web Content
+   ↓
+Text Splitting
+   ↓
+Embeddings
+   ↓
+FAISS Retrieval
+   ↓
+Gemini AI
+   ↓
+Output Parsing
+   ↓
+Final Report
+```
+
+## ✨ Features
+
+- Verify claims using trusted online sources.
+- Perform semantic search with embeddings.
+- Generate explainable AI-powered verdicts.
+- Display confidence scores and supporting evidence.
+- Simple and interactive Gradio interface.
 🔎 TruthLens AI
 
 TruthLens AI is an AI-powered fact-checking system that helps users verify whether a claim is true or false. Instead of relying only on the AI model's knowledge, the system searches trusted online sources, retrieves the most relevant information, and then uses Gemini AI to generate a clear and explainable verdict.
