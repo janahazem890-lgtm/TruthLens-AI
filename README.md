@@ -65,7 +65,7 @@ Final Report
 ```json
 {
   "claim": "Coffee causes dehydration.",
-  "verdict": "Mostly False",
+  "verdict": "False",
   "confidence": 92,
   "bullshit_index": 14,
   "reasoning": "Moderate coffee consumption does not cause dehydration in healthy adults."
